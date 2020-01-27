@@ -7,35 +7,25 @@ namespace Composer\Autoload;
 class ComposerStaticInit1097ff61638bb4217e4f03cf6f94053f
 {
     public static $prefixLengthsPsr4 = array (
-        'M' => 
+        'A' => 
         array (
-            'Model\\' => 6,
-        ),
-        'C' => 
-        array (
-            'Core\\' => 5,
-            'Controller\\' => 11,
+            'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Model\\' => 
+        'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app/models',
-        ),
-        'Core\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app/core',
-        ),
-        'Controller\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app/controllers',
+            0 => __DIR__ . '/../..' . '/App',
         ),
     );
 
     public static $classMap = array (
-        'Controller\\homeController' => __DIR__ . '/../..' . '/app/controllers/homeController.php',
-        'Core\\Core' => __DIR__ . '/../..' . '/app/core/Core.php',
+        'App\\Controllers\\errorController' => __DIR__ . '/../..' . '/App/Controllers/erroController.php',
+        'App\\Controllers\\homeController' => __DIR__ . '/../..' . '/App/Controllers/homeController.php',
+        'App\\Core\\Controller' => __DIR__ . '/../..' . '/App/Core/Controller.php',
+        'App\\Core\\Core' => __DIR__ . '/../..' . '/App/Core/Core.php',
+        'App\\Core\\Model' => __DIR__ . '/../..' . '/App/Core/Model.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

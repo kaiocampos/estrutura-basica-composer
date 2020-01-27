@@ -1,5 +1,6 @@
 {
-    "name": "kaio/estrutura_basica",
+    "name": "kaio/site-blog",
+    "description": "Esse será um site na estrutura mvc",
     "authors": [
         {
             "name": "Kaio Campos",
@@ -9,11 +10,12 @@
 
     "autoload": {
         "psr-4": {
-            "Core\\":"app/core/",
-            "Controller\\" :"app/controllers/",
-            "Model\\": "app/models"
+            "App\\":"App/"
         }
     }, 
 
-    "require": {}
+    "require": {
+        "twbs/bootstrap":"4.1.3",
+        "components/font-awesome": "^5.12"
+    }
 }
